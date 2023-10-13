@@ -1,0 +1,190 @@
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --dark-gray: rgb(26, 30, 29);
+  --light-gray: rgb(184, 184, 184);
+  --medium-gray: rgb(65, 60, 84);
+  --yellow: rgb(255, 220, 88);
+  --blue: rgb(24, 60, 161);
+  --red: rgb(233, 23, 23);
+  --background-color: rgb(24, 29, 25);
+  --title-font: 'Big Shoulders Stencil Display', sans-serif;
+  --text-font: 'Kanit', sans-serif;
+  --title-size: 4.2rem;
+  --text-size: 1rem;
+  --text-color-gray: rgb(65, 60, 84);
+  --text-color-black: rgb(0, 0, 0);
+  --title-text-color: rgb(226, 76, 37);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+.app {
+    background-color: var(--background-color);
+    font-family: var(--text-font);
+  }
+  
+  .whitebg {
+    background-color: var(--white);
+  }
+  
+  .primarybg {
+    background-color: var(--medium-gray);
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 4rem 2rem;
+  
+    @media screen and (max-width: 450px) {
+      padding: 4rem 1rem 2rem;
+    }
+  }
+  
+  .copyright {
+    width: 100%;
+    padding: 2rem 0 0;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  
+    p {
+      text-transform: uppercase;
+      color: var(--white);
+    }
+  }
+  
+  .head-text {
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--white);
+    text-transform: capitalize;
+  
+    span {
+      color: var(--light-gray);
+    }
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
+  }
+  
+  .p-text {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--medium-gray);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .bold-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-color-black);
+    text-align: left;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  
+    padding: 1rem;
+  
+    div {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--white);
+      margin: 0.25rem 0;
+      border: 1px solid var(--light-gray);
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      transition: all 0.3s ease-in-out;
+  
+      svg {
+        width: 15px;
+        height: 15px;
+        color: var(--light-gray);
+      }
+  
+      &:hover {
+        background-color: var(--background-color);
+        border-color: var(--light-gray);
+  
+        svg {
+          color: var(--white);
+        }
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 70px;
+        height: 70px;
+  
+        margin: 0.5rem 0;
+  
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .navigation,
+    .social {
+      display: none;
+    }
+  
+    .copyright {
+      padding: 2rem;
+    }
+  }
