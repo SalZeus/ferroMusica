@@ -1,47 +1,23 @@
-import {defineConfig, isDev} from 'sanity'
-
+import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
-import {schemaTypes} from './schemas'
-import {structure} from './desk'
-
 import {visionTool} from '@sanity/vision'
-import {colorInput} from '@sanity/color-input'
-import {imageHotspotArrayPlugin} from 'sanity-plugin-hotspot-array'
-import {media, mediaAssetSource} from 'sanity-plugin-media'
-import {customDocumentActions} from './plugins/customDocumentActions'
-
-const devOnlyPlugins = [visionTool()]
+//import {googleMapsInput} from '@sanity/google-maps-input'
+import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
   title: 'FerroMusica',
 
-  projectId: 'v9esy8kw',
+  projectId: '5ty63e9p',
   dataset: 'production',
 
   plugins: [
-    deskTool({structure}),
-    colorInput(),
-    imageHotspotArrayPlugin(),
-    customDocumentActions(),
-    media(),
-    ...(isDev ? devOnlyPlugins : []),
+    deskTool(),
+    visionTool(),
+    //googleMapsInput(),
   ],
 
   schema: {
     types: schemaTypes,
-  },
-
-  form: {
-    file: {
-      assetSources: (previousAssetSources) => {
-        return previousAssetSources.filter((assetSource) => assetSource !== mediaAssetSource)
-      },
-    },
-    image: {
-      assetSources: (previousAssetSources) => {
-        return previousAssetSources.filter((assetSource) => assetSource === mediaAssetSource)
-      },
-    },
   },
 })
