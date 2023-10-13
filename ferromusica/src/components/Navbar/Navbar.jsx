@@ -22,7 +22,7 @@ const Navbar = () => {
         </ul>
 
         <div className='navbar-menu'>
-            <AiOutlineAlignRight size={55} onClick={()=>setToggle(true)} />
+            <img src={images.menu} onClick={()=>setToggle(true)} alt="Navbar toggle"/>
             {toggle &&(
                 <motion.div
                     whileInView={{x: [300, 0]}}
