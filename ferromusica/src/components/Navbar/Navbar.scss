@@ -1,48 +1,134 @@
-:root {
-    --font-base: "DM Sans", sans-serif;
-  
-    --white: rgb(255, 255, 255);
-    --black: rgb(0, 0, 0);
-    --dark-gray: rgb(26, 30, 29);
-    --light-gray: rgb(184, 184, 184);
-    --medium-gray: rgb(65, 60, 84);
-    --yellow: rgb(255, 220, 88);
-    --blue: rgb(24, 60, 161);
-    --red: rgb(233, 23, 23);
-    --background-color: rgb(24, 29, 25);
-    --title-font: 'Big Shoulders Stencil Display', sans-serif;
-    --text-font: 'Kanit', sans-serif;
-    --title-size: 4.2rem;
-    --text-size: 1rem;
-    --text-color-gray: rgb(65, 60, 84);
-    --text-color-black: rgb(0, 0, 0);
-    --title-text-color: rgb(226, 76, 37);
-  }
+
 
 .navbar{
     background-color: var(--background-color);
     width: 100%;
-    height: 80px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--text-color-black);
+    color: var(--text-color);
     padding: 0 3% 0 3%;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255, 0.18);
+    margin-bottom: 10px;
+    z-index: 2;
     
-    h1{
+    .navbar-logo{
         font-family: var(--title-font);
-        font-weight: 900;
-        font-size: 4.3rem;
-        color: var(--title-text-color);
+        margin-top: 10px;
+        height: 200px;
+        width: auto;
     }
     .navbar-links{
         display: flex;
         font-family: var(--text-font);
-        flex-direction: column;
+        list-style: none;
         li{
-            color: var(--text-color-black);
+            color: var(--text-color);
             text-decoration: none;
-            font-size: var(--text-size);
+            font-size: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px 0 10px;
+            justify-content: space-evenly;
+            a{
+                color: var(--white);
+                text-decoration: none;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: var(--orange);
+                }
+            }
         }
+    }
+    @media screen and (max-width: 900px){
+        display:  none;
+    }
+}
+
+.navbar-menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    svg{
+        width: 70%;
+        height: 70%;
+        color: var(--white);
+    }
+    div{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 5;
+
+        width: 40%;
+        height: 100vh;
+        
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        flex-direction: column;
+
+        background-color: var(--light-gray);
+        background-size: cover;
+        background-repeat: repeat;
+
+        box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+        svg{
+            width: 35px;
+            height: 35px;
+            color: var(--black);
+            background-color: transparent;
+        }
+        ul{
+            list-style: none;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            li{
+              text-decoration: none;
+
+              display: flex;
+              justify-content: flex-start;
+              background-color: transparent;
+              color: black;
+              background: transparent; 
+              align-items: flex-start;
+              flex-direction: column; 
+              a{
+                background-color: transparent;
+                margin: 20px 10px 20px 0;
+                text-transform: uppercase;
+                font-weight: 500;
+
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: var(--orange);
+                }
+              }
+            }
+        }
+    }
+    @media screen and (max-width: 900px){
+        display: none;
     }
 }

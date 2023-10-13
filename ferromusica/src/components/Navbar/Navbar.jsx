@@ -1,24 +1,44 @@
 import React from 'react'
 import "./Navbar.scss"
-import { AiOutlineAlignRight } from "react-icons/ai";
-import { images } from "../../constants"
+import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
+import { images } from "../../constants";
+import { motion} from "framer-motion";
+import { useState } from 'react';
 
 
 const Navbar = () => {
+ const [toggle, setToggle] = useState(false)
+
   return (
     <nav className='navbar'>
-        <img src={images.logo} alt="logo" />
-        <div className='navbar-logo'>
-            <AiOutlineAlignRight size={55} />
-        </div>
+        <img className="navbar-logo"src={images.logo} alt="logo" />
+        
         <ul className='navbar-links'>
-            {["home", "hero", "about", "contact", "footer"].map((item) =>(
-                <li className="navbar-link" key={`link-${item}`}>
-                    <div />
+            {["home", "hero", "about", "contact"].map((item) =>(
+                <li key={`link-${item}`}>
                     <a href={`#${item}`}>{item}</a>
                 </li>
             ))}
         </ul>
+
+        <div className='navbar-menu'>
+            <AiOutlineAlignRight size={55} onClick={()=>setToggle(true)} />
+            {toggle &&(
+                <motion.div
+                    whileInView={{x: [300, 0]}}
+                    transition={{duration: 0.85, ease: "easeOut"}}
+                >
+                    <AiOutlineClose size={55}  onClick={()=>setToggle(false)} />
+                    <ul className='navbar-links'>
+                        {["home", "hero", "about", "contact"].map((item) =>(
+                            <li className="navbar-link" key={item}>
+                                <a href={`#${item}`} onClick={()=>setToggle(false)}>{item}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </motion.div>
+            )}
+        </div>
     </nav>
   )
 }
