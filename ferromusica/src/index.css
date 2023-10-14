@@ -18,6 +18,7 @@
   --text-color-black: rgb(0, 0, 0);
   --text-color: rgb(255, 255, 255);
   --title-color: rgb(226, 76, 37);
+  --purple: rgb(154, 45, 154); 
 }
 
 * {
@@ -25,7 +26,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  color: var(--text-color);
   background-color: var(--background-color);
 }
 

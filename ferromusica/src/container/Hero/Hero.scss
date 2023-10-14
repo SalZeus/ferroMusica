@@ -1,0 +1,31 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+    h1{
+        position: absolute;
+        font-size: 72px;
+        background: -webkit-linear-gradient(90deg, rgb(147, 46, 214) 0%, rgb(199, 75, 75) 98%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        right: calc(50% - 330px);
+        top: 60%;
+        font-size: 8rem;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        border-radius: 4rem;
+        -webkit-text-stroke: 4px navy;
+        z-index: 1;
+        }
+    img{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        background-image: cover;
+        margin: 0;
+        z-index: 0;
+    }
+}

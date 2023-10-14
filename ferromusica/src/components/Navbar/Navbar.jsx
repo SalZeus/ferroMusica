@@ -24,19 +24,19 @@ const Navbar = () => {
         <div className='navbar-menu'>
             <img src={images.menu} onClick={()=>setToggle(true)} alt="Navbar toggle"/>
             {toggle &&(
-                <motion.div
-                    whileInView={{x: [300, 0]}}
-                    transition={{duration: 0.85, ease: "easeOut"}}
-                >
-                    <AiOutlineClose size={55}  onClick={()=>setToggle(false)} />
-                    <ul className='navbar-links'>
-                        {["home", "hero", "about", "contact"].map((item) =>(
-                            <li className="navbar-link" key={item}>
-                                <a href={`#${item}`} onClick={()=>setToggle(false)}>{item}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </motion.div>
+            <motion.div
+                whileInView={{x: [300, 0]}}
+                transition={{duration: 0.85, ease: "easeOut"}}
+            >
+                <AiOutlineClose size={55}  onClick={()=>setToggle(false)} />
+                <ul className='menu-links'>
+                    {["home", "hero", "about", "contact"].map((item) =>(
+                        <li className="navbar-link" key={item}>
+                            <a href={`#${item}`} onClick={()=>setToggle(false)}>{item}</a>
+                        </li>
+                    ))}
+                </ul>
+            </motion.div>
             )}
         </div>
     </nav>
