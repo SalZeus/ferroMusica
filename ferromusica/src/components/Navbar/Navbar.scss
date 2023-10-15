@@ -1,16 +1,13 @@
-
-
 .navbar{
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: var(--red);
-    padding: 0 3% 0 3%;
     // -webkit-backdrop-filter: blur(4px); causa problemas de z-index inesperados con los demas elementos en la pagina, haciendo que queden por envima del offcanvas
     // backdrop-filter: blur(4px);
     z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .navbar-logo{
     font-family: var(--title-font);
@@ -24,51 +21,52 @@
     list-style: none;
     width: 100%;
     justify-content: space-evenly;
-
+    
     li {
-    color: var(--red);
-    font-size: 4rem;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    a {
-      text-decoration: none;
-      font-weight: 600;
-      text-transform: uppercase;
-      transition: all 0.3s ease-in-out;
       color: var(--red);
-      width: auto;
-
-    &:hover {
-      color: pink;
-      cursor: pointer;
-    }
-
-    div {
-      max-width: 100%;
-      position: relative;
-      img {
-        width: 100%;
-        height: 100px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
+      font-size: 3rem;
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        color: var(--red);
+        width: auto;
+        
+      &:hover {
+        -webkit-border-radius: 130px 130px 130px 130px;
+        -moz-border-radius: 130px 130px 130px 130px;
+        border-radius: 130px 130px 130px 130px;
+        border: 2px solid rgba(225,77,26,0.95);
+        color: pink;
+        cursor: pointer;
+      }
+      div {
+        max-width: 100%;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+      }
+      &:hover img {
+        opacity: 1;
       }
     }
-
-    &:hover img {
-      opacity: 1;
-    }
   }
-}
-
-@media screen and (max-width: 1135px) {
-  display: none;
-}
+  @media screen and (max-width: 1135px) {
+    display: none;
+  }
 }
 
 
@@ -88,7 +86,7 @@
         width: 90px;
         height: 75px;
         color: var(--white);
-        margin:auto;
+        margin: 0 60px 0 0;
         z-index: 9999;
     }
     div{
@@ -163,4 +161,18 @@
     @media screen and (min-width: 1135px){
         display: none;
     }
+}
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--red);
+  margin: 0;
+  padding: 0;
+  svg{
+    width: 55px;
+    height: 55px;
+    margin: 0 10px;
+    color: var(--red);
+  }
 }

@@ -35,11 +35,14 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import cover from "../assets/cover.webp"
-import icecream from "../assets/icecream.webp"
-import icecreampng from "../assets/icecream.png"
-import webplogo from "../assets/logo.webp"
-import creamdrip from "../assets/creamdrip.webp"
+import cover from "../assets/cover.webp";
+import icecream from "../assets/icecream.webp";
+import icecreampng from "../assets/icecream.png";
+import webplogo from "../assets/logo.webp";
+import creamdrip from "../assets/creamdrip.webp";
+import creamdrippng from "../assets/creamdrip.png";
+import horizontallogo from "../assets/horizontal-logo.png";
+import horizontalyellowlogo from "../assets/horizontal-yellow-logo.png";
 
 
 export default {
@@ -82,4 +85,7 @@ export default {
   icecreampng,
   webplogo,
   creamdrip,
+  horizontallogo,
+  horizontalyellowlogo,
+  creamdrippng,
 };
