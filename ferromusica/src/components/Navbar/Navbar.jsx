@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { images } from "../../constants";
 import { motion} from "framer-motion";
 import { useState } from 'react';
-import {AiOutlineTwitter, AiFillFire, AiFillFacebook, AiFillInstagram, AiFillYoutube} from "react-icons/ai";
+import {AiFillInstagram, AiFillYoutube} from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa6";
 
 
