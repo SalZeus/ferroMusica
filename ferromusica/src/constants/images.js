@@ -35,7 +35,12 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import cover from "../assets/cover.png"
+import cover from "../assets/cover.webp"
+import icecream from "../assets/icecream.webp"
+import icecreampng from "../assets/icecream.png"
+import webplogo from "../assets/logo.webp"
+import creamdrip from "../assets/creamdrip.webp"
+
 
 export default {
   email,
@@ -73,4 +78,8 @@ export default {
   spotify,
   menu,
   cover,
+  icecream,
+  icecreampng,
+  webplogo,
+  creamdrip,
 };

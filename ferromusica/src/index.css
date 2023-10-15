@@ -26,6 +26,11 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: var(--background-color);
+}
+body {
+  background: linear-gradient(45deg, var(--red) 0%, var(--black) 60%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 

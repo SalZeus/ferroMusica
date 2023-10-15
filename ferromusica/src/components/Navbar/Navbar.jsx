@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navbar.scss"
-import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import { images } from "../../constants";
 import { motion} from "framer-motion";
 import { useState } from 'react';
@@ -11,12 +11,17 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-        <img className="navbar-logo"src={images.logo} alt="logo" />
+        <img className="navbar-logo"src={images.webplogo} alt="logo" />
         
         <ul className='navbar-links'>
             {["home", "hero", "about", "contact"].map((item) =>(
                 <li key={`link-${item}`}>
-                    <a href={`#${item}`}>{item}</a>
+                    <a href={`#${item}`}>
+                        {item}
+                        <div>
+                            <img src={images.creamdrip} alt="Helado escurrido" />
+                        </div>
+                    </a>
                 </li>
             ))}
         </ul>
@@ -32,7 +37,9 @@ const Navbar = () => {
                 <ul className='menu-links'>
                     {["home", "hero", "about", "contact"].map((item) =>(
                         <li className="navbar-link" key={item}>
-                            <a href={`#${item}`} onClick={()=>setToggle(false)}>{item}</a>
+                            <a href={`#${item}`} onClick={()=>setToggle(false)}>
+                                {item}
+                            </a>
                         </li>
                     ))}
                 </ul>
