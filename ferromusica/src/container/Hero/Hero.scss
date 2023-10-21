@@ -42,6 +42,7 @@
             height: 100%;
             object-fit: cover;
             margin: 0;
+            padding: 0;
             opacity: 0.8; /* Optionally reduce the opacity to make it more background-like */
             -webkit-filter: grayscale(8%) sepia(66%) blur(1px) brightness(83%) saturate(115%) contrast(122%) invert(12%);
             -moz-filter: grayscale(8%) sepia(66%) blur(1px) brightness(83%) saturate(115%) contrast(122%) invert(12%);

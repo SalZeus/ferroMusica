@@ -6,7 +6,7 @@
     // backdrop-filter: blur(4px);
     z-index: 9999;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .navbar-logo{
@@ -23,7 +23,7 @@
     justify-content: space-evenly;
     
     li {
-      color: var(--red);
+      color: var(--orange);
       font-size: 3rem;
       margin: 0 10px;
       display: flex;
@@ -35,7 +35,7 @@
         font-weight: 600;
         text-transform: uppercase;
         transition: all 0.3s ease-in-out;
-        color: var(--red);
+        color: var(--orange);
         width: auto;
         
       &:hover {
@@ -43,7 +43,7 @@
         -moz-border-radius: 130px 130px 130px 130px;
         border-radius: 130px 130px 130px 130px;
         border: 2px solid rgba(225,77,26,0.95);
-        color: pink;
+        color: var(--yellow);
         cursor: pointer;
       }
       div {

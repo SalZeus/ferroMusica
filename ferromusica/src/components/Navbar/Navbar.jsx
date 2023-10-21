@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className='navbar'>
         <div className='link-container'>
             <ul className='navbar-links'>
-                {["home", "videos", "contact"].map((item) =>(
+                {["home", "videos", "contacto"].map((item) =>(
                     <li key={`link-${item}`}>
                         <a href={`#${item}`}>
                             {item}
@@ -52,7 +52,7 @@ const Navbar = () => {
             >
                 <AiOutlineClose size={55}  onClick={()=>setToggle(false)} />
                 <ul className='menu-links'>
-                    {["videos", "contact"].map((item) =>(
+                    {["videos", "contacto"].map((item) =>(
                         <li className="navbar-link" key={item}>
                             <a href={`#${item}`} onClick={()=>setToggle(false)}>
                                 {item}

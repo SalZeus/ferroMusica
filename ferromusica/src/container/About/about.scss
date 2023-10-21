@@ -1,9 +1,11 @@
 .hook{
     color: var(--orange);
     text-align: center;
-    font-size: var(--title-size);
+    font-size: 8rem;
     margin-bottom: 40px;
-
+    margin: 0 0 120px 0;
+    font-family: var(--cursive-font);
+    font-weight: 200;
 }
 
 .videos{

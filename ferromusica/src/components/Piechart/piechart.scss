@@ -1,0 +1,13 @@
+.pie-container{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    color: var(--white);
+    position: relative;
+    align-items: center;
+    margin: 30px 30px;
+    justify-content: space-around;
+}
+
