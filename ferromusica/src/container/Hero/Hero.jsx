@@ -1,13 +1,17 @@
 import React from 'react'
 import "./Hero.scss"
 import {images} from "../../constants"
+import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
     <div className='hero'>
-      <div className='main-logo'>
+      <motion.div
+      initial={{y: -750}}
+      animate={{ y: -1}}
+      className='main-logo'>
         <img src={images.horizontallogo} alt="" />
-      </div>
+      </motion.div>
 
       <div className='hero-image'>
         <img src={images.cover} alt="cover" />

@@ -12,7 +12,10 @@ const Navbar = () => {
  const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className='navbar'>
+    <motion.nav className='navbar'
+    initial={{y: -250}}
+    animate={{scale: 1.1, y: -1}}
+    >
         <div className='link-container'>
             <ul className='navbar-links'>
                 {["home", "videos", "contacto"].map((item) =>(
@@ -63,7 +66,7 @@ const Navbar = () => {
             </motion.div>
             )}
         </div>
-    </nav>
+    </motion.nav>
   )
 }
 

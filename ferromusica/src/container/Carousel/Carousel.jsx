@@ -75,7 +75,9 @@ function Carousel() {
   }
 
   return (
-    <div className='container'>
+    <motion.div className='container'
+    whileInView={{y: -290,}}
+    >
       <div className='slideshow'>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -104,7 +106,7 @@ function Carousel() {
           ▶
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
