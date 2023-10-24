@@ -27,7 +27,7 @@ import about04 from '../assets/about04.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
-
+import svglogo from "../assets/logo.svg"
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
 import asus from '../assets/asus.png';
@@ -43,6 +43,7 @@ import creamdrip from "../assets/creamdrip.webp";
 import creamdrippng from "../assets/creamdrip.png";
 import horizontallogo from "../assets/horizontal-logo.png";
 import horizontalyellowlogo from "../assets/horizontal-yellow-logo.png";
+import sun from "../assets/sun.svg";
 
 
 export default {
@@ -88,4 +89,6 @@ export default {
   horizontallogo,
   horizontalyellowlogo,
   creamdrippng,
+  svglogo,
+  sun,
 };

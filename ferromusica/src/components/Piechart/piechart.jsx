@@ -5,7 +5,7 @@ import "./piechart.scss"
 function Piechart()
 {
     return(
-            <div className="pie-container">
+            <section className="pie-container">
                 <div className="chart">
                     <Chart 
                      className="pie"
@@ -78,7 +78,7 @@ function Piechart()
                     }}
                     />
                 </div>
-            </div>
+            </section>
     );
 }
 export default Piechart;

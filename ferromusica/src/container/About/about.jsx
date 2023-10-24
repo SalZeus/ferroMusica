@@ -35,7 +35,7 @@ const About = () => {
         Music
       </h2> */}
       
-      <div className='videos'>
+      <section className='videos'>
         {videos.map(({ title, videoUrl }, index) => (
          <motion.div
             whileInView={{ opacity: 1 }}
@@ -57,7 +57,7 @@ const About = () => {
             </h2>
           </motion.div>
         ))}
-      </div>
+      </section>
     </>
   );
 };

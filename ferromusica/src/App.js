@@ -1,9 +1,14 @@
 import React from 'react'
 
-import { About, Footer, Header, Hero, Contact, Carousel } from './container';
-import { Navbar } from './components';
+// import { Footer, Header, Hero, Contact, Carousel } from './container';
 import "./App.scss"
 import Piechart from './components/Piechart/piechart';
+import Header from "./container/Header/Header"
+import Hero from "./container/Hero/Hero"
+import Carousel from "./container/Carousel/Carousel"
+import Contact from "./container/Contact/Contact"
+import Footer from "./container/Footer/Footer"
+import Navbar from "./components/Navbar/Navbar.jsx"
 
 
 const App = () => {
@@ -13,9 +18,8 @@ const App = () => {
       <Navbar />
       <Header />
       <Hero />
-      {/* <About /> */}
       <Carousel />
-      <Piechart />
+      {/* <Piechart /> */}
       <Contact />
       <Footer />
     </div>

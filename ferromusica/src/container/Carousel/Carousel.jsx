@@ -75,7 +75,7 @@ function Carousel() {
   }
 
   return (
-    <motion.div className='container'
+    <motion.section className='container'
     whileInView={{y: -290,}}
     >
       <div className='slideshow'>
@@ -106,7 +106,7 @@ function Carousel() {
           ▶
         </button>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
 

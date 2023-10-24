@@ -1,6 +1,6 @@
 .navbar{
     width: 100%;
-    height: auto;
+    height: 150px;
     color: var(--red);
     // -webkit-backdrop-filter: blur(4px); causa problemas de z-index inesperados con los demas elementos en la pagina, haciendo que queden por envima del offcanvas
     // backdrop-filter: blur(4px);
@@ -8,6 +8,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(57, 41, 36, 0.2);
 }
 .navbar-logo{
     font-family: var(--title-font);
@@ -37,6 +40,7 @@
         transition: all 0.3s ease-in-out;
         color: var(--orange);
         width: auto;
+        padding: 5px;
         
       &:hover {
         -webkit-border-radius: 130px 130px 130px 130px;
