@@ -45,8 +45,7 @@ import horizontallogo from "../assets/horizontal-logo.png";
 import horizontalyellowlogo from "../assets/horizontal-yellow-logo.png";
 import sun from "../assets/sun.svg";
 
-
-export default {
+const images = {
   email,
   mobile,
   api,
@@ -91,4 +90,6 @@ export default {
   creamdrippng,
   svglogo,
   sun,
-};
+}
+
+export default images;

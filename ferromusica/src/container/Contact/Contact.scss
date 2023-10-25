@@ -8,7 +8,7 @@ section{
         justify-content: space-between;
         margin: 0;
         .invitation{
-            background: rgba(217, 228, 9, 0.805);
+            background: rgba(0, 0, 0, 0.805);
             width: 50vw;
             height: 100%;
             text-align: center;
@@ -20,6 +20,7 @@ section{
                 font-size: var(--title-size);
                 font-family: var(--text-font);
                 align-self: center;
+                color: white;
             }
             p{
                 margin: 0px 0 30px 0;
@@ -27,11 +28,11 @@ section{
                 text-align: center;
                 align-self: center;
                 font-size: 3rem;
-
+                color: white;
             }
         }
         .calltoaction{
-            background: rgba(226, 76, 37, 0.7);
+            background: rgba(255, 255, 255, 0.7);
             width: 50vw;
             height: 100%;
             text-align: center;
@@ -43,7 +44,7 @@ section{
                 font-size: var(--title-size);
                 font-family: var(--text-font);
                 align-self: center;
-                color: var(--white);
+                color: var(--black);
             }
             a{
                 margin: 0px 0 30px 0;
@@ -51,6 +52,7 @@ section{
                 text-align: center;
                 align-self: center;
                 font-size: 3rem;
+                color: var(--black);
             }
         }
     }
